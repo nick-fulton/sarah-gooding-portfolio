@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Sarah Gooding</title>
+  <meta name="description" content="Get in touch with Sarah Gooding for freelance and full-time copywriting and scriptwriting work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="brand-work.html">Brand work</a></li>
+          <li><a href="editorial-work.html">Editorial work</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="wrap">
+      <h1 class="section-title">Get in touch</h1>
+      <p class="section-sub">Available for freelance and full-time copywriting &amp; scriptwriting work.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <ul class="contact-links">
+            <li><a href="mailto:sarah.gooding@gmail.com">sarah.gooding@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/sarahmgooding/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/sarah__gooding/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://open.spotify.com/user/sarahmgooding" target="_blank" rel="noopener">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <!--
+            This form has no backend yet. To make it actually send messages,
+            sign up for a free form service (e.g. Formspree) and set the
+            form's action to the endpoint it gives you.
+          -->
+          <form class="contact-form" action="#" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button class="btn" type="submit">Send</button>
+            <p class="form-note">Note: this form isn't wired up to send email yet — use the email link for now.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> Sarah Gooding</span>
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/sarahmgooding/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/sarah__gooding/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://open.spotify.com/user/sarahmgooding" target="_blank" rel="noopener">Spotify</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/nav.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
