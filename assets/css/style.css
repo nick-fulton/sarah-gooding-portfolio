@@ -128,7 +128,6 @@ img {
 
 /* Hero */
 .hero {
-  padding: 64px 0 48px;
   background: linear-gradient(180deg, var(--peach) 0%, var(--cream) 100%);
 }
 
@@ -151,9 +150,9 @@ img {
 /* Bio section */
 .bio {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: 1fr 1.3fr;
   gap: 48px;
-  align-items: center;
+  align-items: start;
   padding: 56px 0;
 }
 
