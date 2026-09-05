@@ -49,9 +49,8 @@ img {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(250, 243, 234, 0.92);
+  background: rgba(246, 201, 214, 0.85);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--line);
 }
 
 .site-header .wrap {
@@ -133,9 +132,10 @@ img {
 
 .hero h1 {
   font-family: var(--display);
-  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  font-size: clamp(1.8rem, 6vw, 4.4rem);
   text-transform: uppercase;
   letter-spacing: 0.01em;
+  white-space: nowrap;
   margin: 0 0 8px;
 }
 
@@ -144,7 +144,7 @@ img {
   font-style: italic;
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   color: var(--ink-soft);
-  margin: 0;
+  margin: 0 0 20px;
 }
 
 /* Bio section */
