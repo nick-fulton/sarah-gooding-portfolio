@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarah Gooding — Writer & Creative</title>
+  <meta name="description" content="Sarah Gooding is a copywriter and scriptwriter who has written for major music festivals, Broadway productions, and global brands.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Sarah Gooding</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="brand-work.html">Brand work</a></li>
+          <li><a href="editorial-work.html">Editorial work</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>Sarah Gooding</h1>
+      <p class="tagline">Writer &amp; Creative</p>
+    </div>
+  </section>
+
+  <section class="bio">
+    <div class="wrap bio">
+      <div>
+        <p><strong>Born in New Zealand. Raised on the internet.</strong></p>
+        <p>I started out as a journalist, magazine copyeditor, and music blog cofounder. These days I craft stories across digital, experiential, and live formats as a copywriter and scriptwriter. I've written for major music festivals, Broadway productions, and global brands.</p>
+        <p>I'm endlessly curious and always dabbling in new creative ventures — when I'm not writing, you'll find me dancing, working on comedy sketches, playing music, making art, and learning French. Pourquoi pas!</p>
+        <p>I'm available for freelance and full-time opportunities, so please <a href="#contact">get in touch</a>.</p>
+        <p><a class="btn" href="brand-work.html">See my work</a></p>
+      </div>
+      <div class="portrait">
+        <img src="assets/img/portrait.jpg" alt="Portrait of Sarah Gooding" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2 class="section-title">Get in touch</h2>
+      <p class="section-sub">Available for freelance and full-time copywriting &amp; scriptwriting work.</p>
+      <div class="contact-grid">
+        <div>
+          <ul class="contact-links">
+            <li><a href="mailto:sarah.gooding@gmail.com">sarah.gooding@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/sarahmgooding/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/sarah__gooding/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://open.spotify.com/user/sarahmgooding" target="_blank" rel="noopener">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <!--
+            This form has no backend yet. To make it actually send messages,
+            sign up for a free form service (e.g. Formspree) and set the
+            form's action to the endpoint it gives you.
+          -->
+          <form class="contact-form" action="#" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button class="btn" type="submit">Send</button>
+            <p class="form-note">Note: this form isn't wired up to send email yet — use the email link for now.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> Sarah Gooding</span>
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/sarahmgooding/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/sarah__gooding/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://open.spotify.com/user/sarahmgooding" target="_blank" rel="noopener">Spotify</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/nav.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
