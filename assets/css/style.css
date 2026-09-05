@@ -227,7 +227,7 @@ img {
 /* Project grid */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 28px;
   padding: 48px 0 72px;
 }
