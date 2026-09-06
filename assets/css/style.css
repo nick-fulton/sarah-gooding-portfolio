@@ -272,7 +272,7 @@ img {
 .article-list a {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 24px;
   text-decoration: none;
   padding: 22px 4px;
@@ -298,6 +298,7 @@ img {
   object-fit: contain;
   border-radius: 0;
   mix-blend-mode: multiply;
+  filter: grayscale(1);
 }
 
 .article-list .headline {
@@ -320,6 +321,7 @@ img {
 @media (max-width: 600px) {
   .article-list a {
     flex-direction: column;
+    align-items: flex-start;
     gap: 4px;
   }
 
