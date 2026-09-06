@@ -325,6 +325,13 @@ img {
   min-width: 110px;
 }
 
+.article-list .outlet.outlet-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  letter-spacing: 0.01em;
+}
+
 .article-list .outlet img {
   max-height: 22px;
   max-width: 100px;
