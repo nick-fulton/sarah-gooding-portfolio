@@ -228,19 +228,19 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin: 0;
   padding: 0;
 }
 
 .filter-pill {
   font-family: var(--sans);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   background: #fff;
   color: var(--ink);
   border: 1px solid var(--ink);
   border-radius: 999px;
-  padding: 6px 16px;
+  padding: 5px 13px;
   cursor: pointer;
   transition: background 0.15s, color 0.15s;
 }
