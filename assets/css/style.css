@@ -343,6 +343,10 @@ img {
   filter: grayscale(1);
 }
 
+.article-list .outlet img.outlet-icon {
+  max-height: 34px;
+}
+
 .article-list .headline {
   flex: 1;
   font-size: 1.05rem;
