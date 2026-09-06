@@ -285,12 +285,19 @@ img {
 }
 
 .article-list .outlet {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 0.95rem;
-  color: var(--ink-soft);
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
   min-width: 110px;
+}
+
+.article-list .outlet img {
+  max-height: 22px;
+  max-width: 100px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  mix-blend-mode: multiply;
 }
 
 .article-list .headline {
