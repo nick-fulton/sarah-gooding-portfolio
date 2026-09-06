@@ -224,6 +224,41 @@ img {
   border-bottom: 1px solid var(--line);
 }
 
+.outlet-filter {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-pill {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  background: #fff;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.filter-pill:hover {
+  background: var(--ink);
+  color: #fff;
+}
+
+.filter-pill.is-active {
+  background: var(--ink);
+  color: #fff;
+}
+
+.article-list li[hidden] {
+  display: none;
+}
+
 /* Project grid */
 .project-grid {
   display: grid;
