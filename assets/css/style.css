@@ -487,6 +487,7 @@ a.project-card:hover {
 .case-gallery {
   columns: 3 220px;
   column-gap: 16px;
+  column-fill: auto;
 }
 
 .case-gallery img {
@@ -495,6 +496,10 @@ a.project-card:hover {
   border-radius: 12px;
   break-inside: avoid;
   box-shadow: 0 6px 18px rgba(42, 38, 34, 0.08);
+}
+
+.case-gallery img.gallery-wide {
+  column-span: all;
 }
 
 @media (max-width: 760px) {
@@ -511,6 +516,86 @@ a.project-card:hover {
   .case-gallery {
     columns: 1;
   }
+}
+
+/* JS-balanced masonry: overrides the CSS column layout above once assets have
+   loaded, since browser column-balancing can silently collapse to one column
+   when a gallery has several large break-inside:avoid items. */
+.case-gallery.js-masonry {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 16px;
+  columns: unset;
+}
+
+.case-gallery.js-masonry .gallery-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.case-gallery.js-masonry img,
+.case-gallery.js-masonry video {
+  break-inside: auto;
+}
+
+.case-gallery.js-masonry img.gallery-wide {
+  column-span: unset;
+  flex: 1 1 100%;
+  width: 100%;
+  margin: 0 0 16px;
+}
+
+.lightbox-trigger {
+  cursor: zoom-in;
+}
+
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background: rgba(20, 16, 14, 0.9);
+}
+
+.lightbox-overlay.open {
+  display: flex;
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  cursor: zoom-out;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+body.lightbox-lock {
+  overflow: hidden;
 }
 
 /* Contact */
