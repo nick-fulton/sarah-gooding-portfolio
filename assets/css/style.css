@@ -494,6 +494,13 @@ a.project-card:hover {
   }
 }
 
+.case-banner img {
+  width: 100%;
+  margin: 0 0 32px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(42, 38, 34, 0.08);
+}
+
 .case-gallery {
   columns: 3 220px;
   column-gap: 16px;
