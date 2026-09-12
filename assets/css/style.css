@@ -476,11 +476,21 @@ a.project-card:hover {
   margin: 4px 0 24px 32px;
 }
 
+/* Caps a small/portrait hero image so it doesn't upscale beyond its native
+   size and tower over a short text column. */
+.case-intro.text-wrap .case-media.case-media-narrow {
+  width: 280px;
+}
+
 @media (max-width: 760px) {
   .case-intro.text-wrap .case-media {
     float: none;
     width: 100%;
     margin: 0 0 24px;
+  }
+
+  .case-intro.text-wrap .case-media.case-media-narrow {
+    width: 100%;
   }
 }
 
