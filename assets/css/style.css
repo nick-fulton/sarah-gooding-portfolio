@@ -427,7 +427,9 @@ a.project-card:hover {
   margin-bottom: 32px;
 }
 
-.case-intro img {
+.case-intro img,
+.case-intro video {
+  width: 100%;
   border-radius: 16px;
   box-shadow: 0 12px 30px rgba(42, 38, 34, 0.15);
 }
