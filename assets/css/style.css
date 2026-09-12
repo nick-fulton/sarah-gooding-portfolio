@@ -460,7 +460,8 @@ a.project-card:hover {
   margin-bottom: 32px;
 }
 
-.case-intro.text-wrap {
+.case-intro.text-wrap,
+.case-intro.case-intro-full {
   display: block;
 }
 
