@@ -480,7 +480,7 @@ a.project-card:hover {
 /* Caps a small/portrait hero image so it doesn't upscale beyond its native
    size and tower over a short text column. */
 .case-intro.text-wrap .case-media.case-media-narrow {
-  width: 280px;
+  width: 200px;
 }
 
 @media (max-width: 760px) {
