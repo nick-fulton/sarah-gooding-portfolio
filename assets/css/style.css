@@ -576,9 +576,10 @@ a.project-card:hover {
   position: fixed;
   inset: 0;
   z-index: 1000;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 32px;
+  overflow-y: auto;
   background: rgba(20, 16, 14, 0.9);
 }
 
@@ -588,10 +589,18 @@ a.project-card:hover {
 
 .lightbox-img {
   max-width: 100%;
-  max-height: 100%;
+  width: auto;
+  max-height: none;
+  margin: auto;
   border-radius: 8px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
   cursor: zoom-out;
+}
+
+@media (min-width: 640px) {
+  .lightbox-img {
+    max-width: min(90vw, 900px);
+  }
 }
 
 .lightbox-close {
