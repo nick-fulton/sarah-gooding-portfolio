@@ -173,8 +173,7 @@ img {
 }
 
 .bio .portrait img {
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  width: 100%;
   box-shadow: 0 12px 30px rgba(42, 38, 34, 0.15);
 }
 
