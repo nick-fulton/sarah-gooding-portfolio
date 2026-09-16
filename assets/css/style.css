@@ -177,6 +177,10 @@ img {
   box-shadow: 0 12px 30px rgba(42, 38, 34, 0.15);
 }
 
+.bio .portrait {
+  margin-top: 16px;
+}
+
 .btn {
   display: inline-block;
   background: var(--rust);
