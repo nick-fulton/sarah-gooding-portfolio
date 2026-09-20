@@ -771,3 +771,7 @@ form.contact-form {
 .site-footer a:hover {
   color: var(--rust);
 }
+
+.outlet-filter-industry {
+  margin-top: 10px;
+}
