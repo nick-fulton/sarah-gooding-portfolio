@@ -181,6 +181,22 @@ img {
   margin-top: 16px;
 }
 
+@media (max-width: 760px) {
+  .bio {
+    padding-top: 0;
+  }
+
+  .bio .portrait {
+    max-width: none;
+    margin: 0 -24px;
+  }
+
+  .bio .portrait img {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
 .btn {
   display: inline-block;
   background: var(--rust);
