@@ -192,6 +192,15 @@ img {
     max-width: none;
     margin: 0;
   }
+
+  .hero .tagline {
+    font-size: min(0.95rem, 4.1vw);
+    white-space: nowrap;
+  }
+
+  .tagline-extra {
+    display: none;
+  }
 }
 
 .btn {
