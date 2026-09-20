@@ -182,18 +182,15 @@ img {
 }
 
 @media (max-width: 760px) {
+  .wrap,
   .bio {
-    padding-top: 0;
+    padding-left: 28px;
+    padding-right: 28px;
   }
 
   .bio .portrait {
     max-width: none;
-    margin: 0 -24px;
-  }
-
-  .bio .portrait img {
-    border-radius: 0;
-    box-shadow: none;
+    margin: 0;
   }
 }
 
