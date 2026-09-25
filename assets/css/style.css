@@ -775,3 +775,10 @@ form.contact-form {
 .outlet-filter-industry {
   margin-top: 28px;
 }
+
+.case-back ~ .section-sub {
+  font-family: var(--display);
+  text-transform: uppercase;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  color: var(--rust);
+}
