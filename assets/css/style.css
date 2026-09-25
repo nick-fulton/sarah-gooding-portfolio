@@ -783,9 +783,15 @@ form.contact-form {
   color: var(--rust);
 }
 
+@media (max-width: 760px) {
+  .lede-br {
+    display: none;
+  }
+}
+
 @media (min-width: 761px) {
   .bio {
-    grid-template-columns: 0.6fr 1fr;
+    grid-template-columns: 0.582fr 1fr;
     align-items: start;
   }
 
@@ -794,7 +800,7 @@ form.contact-form {
   }
 
   .bio > div:last-child p {
-    font-size: calc(100cqw / 34);
+    font-size: calc(100cqw / 36);
     line-height: 1.5;
     margin: 0 0 calc(100cqw / 36);
   }
@@ -818,7 +824,7 @@ form.contact-form {
   }
 
   .bio .lede {
-    font-size: calc(100cqw / 34);
+    font-size: calc(100cqw / 28.5);
     margin: 0 0 calc(100cqw / 36);
   }
 
