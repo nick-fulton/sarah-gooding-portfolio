@@ -782,3 +782,42 @@ form.contact-form {
   font-size: clamp(1rem, 2.4vw, 1.4rem);
   color: var(--rust);
 }
+
+@media (min-width: 761px) {
+  .bio {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+
+  .bio > div:last-child {
+    container-type: inline-size;
+  }
+
+  .bio .portrait {
+    position: relative;
+    margin-top: 0;
+  }
+
+  .bio .portrait img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+
+  .hero h1 {
+    font-size: calc(100cqw / 9.9);
+    margin: 0 0 10px;
+  }
+
+  .hero .tagline {
+    font-size: max(0.95rem, calc(100cqw / 26));
+    margin: 0 0 16px;
+  }
+
+  .bio .lede {
+    font-size: 0.95rem;
+    margin: 0 0 16px;
+  }
+}
