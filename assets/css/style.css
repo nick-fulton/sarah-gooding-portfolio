@@ -791,33 +791,36 @@ form.contact-form {
 
   .bio > div:last-child {
     container-type: inline-size;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .bio > div:last-child p {
+    margin: 0;
+    font-size: clamp(0.85rem, 1.45vw, 1rem);
   }
 
   .bio .portrait {
-    position: relative;
     margin-top: 0;
   }
 
   .bio .portrait img {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 20%;
+    display: block;
   }
 
   .hero h1 {
     font-size: calc(100cqw / 9.9);
-    margin: 0 0 10px;
+    margin: 0;
   }
 
   .hero .tagline {
     font-size: max(0.95rem, calc(100cqw / 26));
-    margin: 0 0 16px;
+    margin: 0;
   }
 
   .bio .lede {
     font-size: 0.95rem;
-    margin: 0 0 16px;
+    margin: 0;
   }
 }
