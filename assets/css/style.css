@@ -785,7 +785,7 @@ form.contact-form {
 
 @media (min-width: 761px) {
   .bio {
-    grid-template-columns: 0.633fr 1fr;
+    grid-template-columns: 0.6fr 1fr;
     align-items: start;
   }
 
@@ -820,5 +820,10 @@ form.contact-form {
   .bio .lede {
     font-size: calc(100cqw / 34);
     margin: 0 0 calc(100cqw / 36);
+  }
+
+  .bio .bio-cta {
+    letter-spacing: -0.02em;
+    word-spacing: -0.04em;
   }
 }
