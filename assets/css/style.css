@@ -785,20 +785,18 @@ form.contact-form {
 
 @media (min-width: 761px) {
   .bio {
-    grid-template-columns: 1fr 1fr;
-    align-items: stretch;
+    grid-template-columns: 0.633fr 1fr;
+    align-items: start;
   }
 
   .bio > div:last-child {
     container-type: inline-size;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   .bio > div:last-child p {
-    margin: 0;
-    font-size: clamp(0.85rem, 1.45vw, 1rem);
+    font-size: calc(100cqw / 34);
+    line-height: 1.5;
+    margin: 0 0 calc(100cqw / 36);
   }
 
   .bio .portrait {
@@ -811,16 +809,16 @@ form.contact-form {
 
   .hero h1 {
     font-size: calc(100cqw / 9.9);
-    margin: 0;
+    margin: 0 0 calc(100cqw / 40);
   }
 
   .hero .tagline {
-    font-size: max(0.95rem, calc(100cqw / 26));
-    margin: 0;
+    font-size: calc(100cqw / 26);
+    margin: 0 0 calc(100cqw / 36);
   }
 
   .bio .lede {
-    font-size: 0.95rem;
-    margin: 0;
+    font-size: calc(100cqw / 34);
+    margin: 0 0 calc(100cqw / 36);
   }
 }
